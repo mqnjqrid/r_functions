@@ -1,4 +1,5 @@
-men_var_table = function(table1, table2, rowcol = "", colname = colnames(table1), rowname = rownames(table1)) {
+# rowcal is the box at the intersection of rownames and column names
+mean_var_table = function(table1, table2, rowcol = "", colname = colnames(table1), rowname = rownames(table1)) {
 for(rownum in 0:nrow(table1)) {
   if(rownum == 0){
     cat("\\begin{tabular}{|c|rrrr|} \\hline\n")
